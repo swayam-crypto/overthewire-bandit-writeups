@@ -1,24 +1,15 @@
-# Bandit Level 5 → 6 Writeup
+# Bandit Level 6 → 7 Writeup
 
 ## Goal
-The password for the next level is stored somewhere on the server and has all of the following properties:
-
-owned by user bandit7
-owned by group bandit6
-33 bytes in size
+The password for the next level is stored in the file `data.txt` next to the word `millionth`.
 
 ## Commands Used
-ls, find, cat, cd
+`ls`, `grep`
 
 ## Steps
-- first did ls and found there were no files also not hidden files
-- then performed a find method with different operands as per the question
-- find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
-- we used "-type" operator for finding the file type
-- "-user" operator for finding the user bandit7
-- "-group: operator for finding the group bandit6
-- "-size" operator for finding file size of 33 and c for byte because CLI operates on blocks and 1 block = 512bytes
-- "2>/dev/null" is used to ignore hidden file warning
+- Ran `ls` to list the files in the current directory and confirm that `data.txt` exists.
+- Used `grep "millionth" data.txt` to search for the line in `data.txt` that contains the word `millionth`.
+- Read the output of the command and noted the password printed next to `millionth`.
 
 ## Password Found
-morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
