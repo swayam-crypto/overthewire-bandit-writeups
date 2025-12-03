@@ -1,16 +1,19 @@
 # Bandit Level 4 → 5 Writeup
 
 ## Goal
-The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+human-readable
+1033 bytes in size
+not executable
 
 ## Commands Used
-ls , cd , cat , file , du , find
+ls, cd and find
 
 ## Steps
-- performed "ls" found "inhere" folder and then did "cd inhere"
-- ls'ed inhere and found 9 different files named -file01, -file02, -file03 and so on
-- performed "cat ./-file01.....09" and found the password
+- as the information provided in the question we know that the file is human-readable, 1033 bytes in size and not executable
+- so with "find" command and its various operators this was the performed command 
+- "ls", "cd inhere", "find . -type f -size 1033c ! -executable", "cat ./maybehere07/-file2"
 
 ## Password Found
-4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
-
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
