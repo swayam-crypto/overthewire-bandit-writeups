@@ -3,17 +3,16 @@
 ## Goal
 The password for the next level is stored in a hidden file in the inhere directory.
 
+## Goal
+The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+
 ## Commands Used
 ls , cd , cat , file , du , find
 
 ## Steps
-- first "ls" for viewing which files or folders are there
-- i found "inhere" folder
-- did "cd inhere" and performed ls command there were no file or folder 
-- so i used "ls -a" to show all hidden files or folders
-- there was a file names"...Hiding-From-You" performed "cat ...Hiding-From-You"
-- Got the answer
+- performed "ls" found "inhere" folder and then did "cd inhere"
+- ls'ed inhere and found 9 different files named -file01, -file02, -file03 and so on
+- performed "cat ./-file01.....09" and found the password
 
 ## Password Found
-2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
-
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
