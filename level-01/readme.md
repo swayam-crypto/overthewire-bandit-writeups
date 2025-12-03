@@ -1,12 +1,16 @@
-# Bandit Level 0 -> evel 1 Writeup
+## Bandit Level 0 → 1 Writeup
 
 ## Goal
-The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.
+The password for the next level is stored in a file called - located in the home directory
 
 ## Commands Used
-ssh
+ls , cd , cat , file , du , find
 
 ## Steps
-- ssh bandit0@bandit.labs.overthewire.org -p 2220
-- password - bandit0
+- as we know In Linux, a file named “-” is tricky because - usually means stdin or an option
+- thats the reason we use full path "cat ./-"
+
+## Password Found
+ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
 
